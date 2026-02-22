@@ -21,9 +21,9 @@ export function calculateStats(
   synergy?: SynergyConflict
 ): Stats {
   const mult = RARITY_MULTIPLIER[rarity];
-  const keys: (keyof Stats)[] = ['ATK', 'DEF', 'SPD', 'LCK', 'WTF'];
+  const keys: (keyof Stats)[] = ['ATK', 'DEF', 'SPD', 'LCK', 'CHS'];
 
-  const stats: Stats = { ATK: 0, DEF: 0, SPD: 0, LCK: 0, WTF: 0 };
+  const stats: Stats = { ATK: 0, DEF: 0, SPD: 0, LCK: 0, CHS: 0 };
 
   for (const k of keys) {
     const baseVal = base.baseStats[k];

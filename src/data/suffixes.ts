@@ -5,13 +5,13 @@ export const SUFFIXES: Affix[] = [
   {
     name: 'of Mild Inconvenience',
     weights: [50, 30, 10, 3, 1],
-    statBias: { WTF: 2, ATK: 1 },
+    statBias: { CHS: 2, ATK: 1 },
     tags: ['mundane'],
   },
   {
     name: 'of Questionable Origin',
     weights: [45, 28, 14, 5, 2],
-    statBias: { WTF: 3, LCK: -1 },
+    statBias: { CHS: 3, LCK: -1 },
     tags: ['shady'],
   },
   {
@@ -23,7 +23,7 @@ export const SUFFIXES: Affix[] = [
   {
     name: 'from the Lost & Found',
     weights: [42, 30, 14, 6, 2],
-    statBias: { DEF: 2, WTF: 2 },
+    statBias: { DEF: 2, CHS: 2 },
     tags: ['cheap'],
   },
   {
@@ -35,7 +35,7 @@ export const SUFFIXES: Affix[] = [
   {
     name: "of Someone Else's Problem",
     weights: [44, 28, 14, 6, 2],
-    statBias: { LCK: 3, WTF: 2 },
+    statBias: { LCK: 3, CHS: 2 },
     tags: ['mundane'],
   },
 
@@ -49,25 +49,25 @@ export const SUFFIXES: Affix[] = [
   {
     name: 'of Passive Aggression',
     weights: [8, 35, 30, 15, 6],
-    statBias: { ATK: 4, WTF: 4 },
+    statBias: { ATK: 4, CHS: 4 },
     tags: ['social'],
   },
   {
     name: 'of Accidental Genius',
     weights: [5, 30, 35, 18, 8],
-    statBias: { LCK: 6, WTF: 4 },
+    statBias: { LCK: 6, CHS: 4 },
     tags: ['smart'],
   },
   {
     name: 'of Dubious Legality',
     weights: [8, 32, 30, 16, 8],
-    statBias: { ATK: 5, LCK: -2, WTF: 3 },
+    statBias: { ATK: 5, LCK: -2, CHS: 3 },
     tags: ['shady', 'legal'],
   },
   {
     name: 'of Uncomfortable Eye Contact',
     weights: [6, 30, 32, 18, 8],
-    statBias: { WTF: 7, DEF: 3 },
+    statBias: { CHS: 7, DEF: 3 },
     tags: ['social'],
   },
 
@@ -81,19 +81,19 @@ export const SUFFIXES: Affix[] = [
   {
     name: 'of Toxic Fumes',
     weights: [2, 8, 38, 30, 14],
-    statBias: { ATK: 6, WTF: 5, DEF: -2 },
+    statBias: { ATK: 6, CHS: 5, DEF: -2 },
     tags: ['poison'],
   },
   {
     name: 'of Spontaneous Combustion',
     weights: [3, 10, 35, 30, 15],
-    statBias: { ATK: 8, WTF: 6, DEF: -4 },
+    statBias: { ATK: 8, CHS: 6, DEF: -4 },
     tags: ['fire'],
   },
   {
     name: 'of Infinite Recursion',
     weights: [1, 8, 36, 30, 16],
-    statBias: { WTF: 10, SPD: -3 },
+    statBias: { CHS: 10, SPD: -3 },
     tags: ['tech', 'cosmic'],
   },
 
@@ -107,7 +107,7 @@ export const SUFFIXES: Affix[] = [
   {
     name: 'of Existential Dread',
     weights: [1, 2, 10, 40, 28],
-    statBias: { WTF: 12, DEF: 6, LCK: -4 },
+    statBias: { CHS: 12, DEF: 6, LCK: -4 },
     tags: ['dark', 'cosmic'],
   },
   {
@@ -127,13 +127,13 @@ export const SUFFIXES: Affix[] = [
   {
     name: 'of Eternal Damnation',
     weights: [0, 1, 5, 18, 50],
-    statBias: { ATK: 18, WTF: 14, LCK: -8 },
+    statBias: { ATK: 18, CHS: 14, LCK: -8 },
     tags: ['cursed', 'dark'],
   },
   {
     name: 'of the Fourth Wall',
     weights: [0, 1, 3, 15, 55],
-    statBias: { WTF: 25, LCK: 10 },
+    statBias: { CHS: 25, LCK: 10 },
     tags: ['cosmic', 'meta'],
   },
   {
@@ -151,7 +151,7 @@ export const SUFFIXES: Affix[] = [
   {
     name: 'of Unusual Effects',
     weights: [0, 1, 5, 16, 48],
-    statBias: { WTF: 20, LCK: 10, ATK: 8 },
+    statBias: { CHS: 20, LCK: 10, ATK: 8 },
     tags: ['unusual'],
   },
 ];

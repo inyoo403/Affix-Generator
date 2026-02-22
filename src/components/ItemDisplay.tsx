@@ -13,7 +13,7 @@ const STAT_COLORS: Record<string, string> = {
   DEF: '#51cf66',
   SPD: '#339af0',
   LCK: '#ffd43b',
-  WTF: '#cc5de8',
+  CHS: '#cc5de8',
 };
 
 const MAX_STAT = 80;

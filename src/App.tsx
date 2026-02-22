@@ -14,7 +14,6 @@ function App() {
   const [generatorState, setGeneratorState] = useState<GeneratorState>({
     pityCounter: 0,
   });
-  const [showReflection, setShowReflection] = useState(false);
 
   const handleGenerate = useCallback(() => {
     const { item, newState } = generateItem(
@@ -50,7 +49,7 @@ function App() {
     <div className="app">
       <div className="app-header">
         <h1>AFFIX GENERATOR</h1>
-        <span className="subtitle">TF2-Style Random Item Factory</span>
+        <span className="subtitle">Random Item</span>
       </div>
 
       <div className="main-layout">
@@ -70,31 +69,6 @@ function App() {
         />
       </div>
 
-      <div className="reflection-bar">
-        <div
-          className="reflection-toggle"
-          onClick={() => setShowReflection((p) => !p)}
-        >
-          {showReflection ? '▾ Hide Reflection' : '▸ Show Reflection'}
-        </div>
-        {showReflection && (
-          <div className="reflection-content">
-            <strong>Reflection:</strong> Building this TF2-style affix generator
-            revealed how much the "feel" of randomness depends on weight tuning
-            rather than pure RNG. The biggest surprise was how often the pity
-            counter (Challenge A) triggered meaningful upgrades — even a +5% per
-            miss stacks fast, making the feedback loop genuinely noticeable after
-            3-4 common rolls. The synergy conflict system (Challenge B) required
-            a re-roll loop that occasionally hit the max-attempt cap with narrow
-            pools, which taught me to always set a fallback. Combo blending
-            (Challenge C) was the most fun — merging tag-matched affixes into a
-            fused name like "RADIOACTIVE" felt rewarding and gave items a
-            distinct personality. If I were to expand this, I'd add a visual
-            particle effect per rarity tier, persist the inventory to local
-            storage, and let users "sell" items to influence future drops.
-          </div>
-        )}
-      </div>
     </div>
   );
 }

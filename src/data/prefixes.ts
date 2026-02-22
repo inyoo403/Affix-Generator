@@ -11,7 +11,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Bootleg',
     weights: [45, 28, 12, 4, 1],
-    statBias: { ATK: 2, WTF: 3 },
+    statBias: { ATK: 2, CHS: 3 },
     tags: ['cheap'],
   },
   {
@@ -23,7 +23,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Suspiciously Moist',
     weights: [40, 30, 15, 5, 2],
-    statBias: { WTF: 5, LCK: -1 },
+    statBias: { CHS: 5, LCK: -1 },
     tags: ['gross'],
   },
   {
@@ -35,7 +35,7 @@ export const PREFIXES: Affix[] = [
   {
     name: "Grandma's Vintage",
     weights: [35, 30, 18, 8, 3],
-    statBias: { DEF: 4, WTF: 2 },
+    statBias: { DEF: 4, CHS: 2 },
     tags: ['old'],
   },
 
@@ -49,13 +49,13 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Mildly Cursed',
     weights: [8, 35, 30, 15, 6],
-    statBias: { ATK: 5, LCK: -3, WTF: 3 },
+    statBias: { ATK: 5, LCK: -3, CHS: 3 },
     tags: ['cursed'],
   },
   {
     name: 'Sentient',
     weights: [5, 30, 35, 18, 8],
-    statBias: { WTF: 8, SPD: 2 },
+    statBias: { CHS: 8, SPD: 2 },
     tags: ['alive'],
   },
   {
@@ -67,7 +67,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Screaming',
     weights: [8, 28, 32, 18, 8],
-    statBias: { ATK: 7, WTF: 5, SPD: -2 },
+    statBias: { ATK: 7, CHS: 5, SPD: -2 },
     tags: ['loud', 'berserk'],
   },
 
@@ -75,7 +75,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Self-Aware',
     weights: [2, 10, 40, 28, 12],
-    statBias: { WTF: 10, SPD: 3, LCK: 2 },
+    statBias: { CHS: 10, SPD: 3, LCK: 2 },
     tags: ['alive', 'smart'],
   },
   {
@@ -87,13 +87,13 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Slightly Haunted',
     weights: [3, 12, 35, 28, 15],
-    statBias: { WTF: 7, ATK: 3, LCK: -2 },
+    statBias: { CHS: 7, ATK: 3, LCK: -2 },
     tags: ['spooky'],
   },
   {
     name: 'Forbidden',
     weights: [1, 8, 35, 32, 16],
-    statBias: { ATK: 8, WTF: 6, DEF: -3 },
+    statBias: { ATK: 8, CHS: 6, DEF: -3 },
     tags: ['cursed', 'dark'],
   },
 
@@ -101,7 +101,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Ungodly',
     weights: [1, 3, 12, 42, 25],
-    statBias: { ATK: 12, WTF: 8, LCK: -5 },
+    statBias: { ATK: 12, CHS: 8, LCK: -5 },
     tags: ['cursed', 'dark'],
   },
   {
@@ -113,7 +113,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Eldritch',
     weights: [1, 3, 8, 40, 28],
-    statBias: { WTF: 15, ATK: 8, SPD: -3 },
+    statBias: { CHS: 15, ATK: 8, SPD: -3 },
     tags: ['dark', 'cosmic'],
   },
   {
@@ -127,7 +127,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Omniscient',
     weights: [0, 1, 5, 18, 50],
-    statBias: { WTF: 20, LCK: 10, SPD: 5 },
+    statBias: { CHS: 20, LCK: 10, SPD: 5 },
     tags: ['cosmic', 'smart'],
   },
   {
@@ -139,7 +139,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Reality-Bending',
     weights: [0, 1, 4, 12, 52],
-    statBias: { WTF: 25, LCK: 12, ATK: 8 },
+    statBias: { CHS: 25, LCK: 12, ATK: 8 },
     tags: ['cosmic'],
   },
   {
@@ -151,7 +151,7 @@ export const PREFIXES: Affix[] = [
   {
     name: 'Unusual',
     weights: [0, 1, 5, 16, 48],
-    statBias: { WTF: 18, ATK: 12, LCK: 8 },
+    statBias: { CHS: 18, ATK: 12, LCK: 8 },
     tags: ['unusual', 'golden'],
   },
 ];

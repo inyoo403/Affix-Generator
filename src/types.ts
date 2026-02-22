@@ -35,7 +35,7 @@ export interface Stats {
   DEF: number;
   SPD: number;
   LCK: number;
-  WTF: number;
+  CHS: number;
 }
 
 export interface ComboBlend {
