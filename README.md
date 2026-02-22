@@ -1,100 +1,16 @@
 # Affix Generator
 
-A random item generator built with **React**, **TypeScript**, and **Vite**. Items are composed of a random prefix, a base item, and a suffix — each influenced by a weighted rarity system, pity mechanics, synergy rules, and combo blending.
-
-## Table of Contents
-
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [How It Works](#how-it-works)
-  - [Rarity System](#rarity-system)
-  - [Weighted Selection](#weighted-selection)
-  - [Pity Counter](#pity-counter)
-  - [Synergies and Conflicts](#synergies-and-conflicts)
-  - [Combo Blending](#combo-blending)
-  - [Stat Calculation](#stat-calculation)
-- [Usage](#usage)
-- [Reflection](#reflection)
-- [Tech Stack](#tech-stack)
+A random item generator built with **React**, **TypeScript**, and **Vite**. Items are composed of a random prefix, a base item, and a suffix. Each influenced by a weighted rarity system, pity mechanics, synergy rules, and combo blending.
 
 ## Features
 
-- **Weighted rarity tiers** — 5 tiers from Common to Legendary, each affecting which affixes appear
-- **Pity counter** — increases your chance of getting a rare item after a streak of common drops
-- **Synergies & conflicts** — certain tag combinations grant bonus stats or are forbidden from appearing together
-- **Combo blending** — matching tag pairs fuse into a unique item name (e.g., "RADIOACTIVE", "PHOENIX-BORN")
-- **Batch generation** — generate 10 items at once
-- **Item history** — browse previously generated items and inspect their stats
-- **Glassmorphism UI** — modern frosted-glass aesthetic with color-coded rarity
-
-## Project Structure
-
-```
-Affix-Generator/
-├── index.html                 # HTML entry point
-├── package.json               # Dependencies and npm scripts
-├── tsconfig.json              # TypeScript compiler options
-├── vite.config.ts             # Vite bundler configuration
-└── src/
-    ├── main.tsx               # React DOM root
-    ├── App.tsx                # Top-level component (state + layout)
-    ├── App.css                # Global styles
-    ├── types.ts               # Shared TypeScript interfaces
-    ├── components/
-    │   ├── ItemDisplay.tsx     # Shows the selected item card + history list
-    │   └── SettingsPanel.tsx   # Rarity slider, synergy toggle, generate buttons
-    ├── engine/
-    │   ├── generator.ts       # Core generation logic (pick affixes, resolve rules)
-    │   ├── stats.ts           # Final stat calculation
-    │   └── weights.ts         # Weighted random selection + pity boost
-    └── data/
-        ├── baseItems.ts       # 14 base items (Frying Pan, Duck, etc.)
-        ├── prefixes.ts        # 24 prefix affixes with per-tier weights
-        ├── suffixes.ts        # 24 suffix affixes with per-tier weights
-        └── synergies.ts       # Combo blend recipes + synergy/conflict rules
-```
-
-## Prerequisites
-
-- **Node.js** v18 or higher — [download here](https://nodejs.org/)
-- **npm** (bundled with Node.js)
-
-## Getting Started
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/inho/Affix-Generator.git
-cd Affix-Generator
-```
-
-2. **Install dependencies**
-
-```bash
-npm install
-```
-
-3. **Start the development server**
-
-```bash
-npm run dev
-```
-
-The app will be available at `http://localhost:5173` (default Vite port).
-
-4. **Build for production** (optional)
-
-```bash
-npm run build
-```
-
-This compiles TypeScript and bundles everything into the `dist/` folder. You can preview the production build with:
-
-```bash
-npm run preview
-```
+- **Weighted rarity tiers** - 5 tiers from Common to Legendary, each affecting which affixes appear
+- **Pity counter** - increases your chance of getting a rare item after a streak of common drops
+- **Synergies & conflicts** - certain tag combinations grant bonus stats or are forbidden from appearing together
+- **Combo blending** - matching tag pairs fuse into a unique item name (e.g., "RADIOACTIVE", "PHOENIX-BORN")
+- **Batch generation** - generate 10 items at once
+- **Item history** - browse previously generated items and inspect their stats
+- **Glassmorphism UI** - modern frosted-glass aesthetic with color-coded rarity
 
 ## How It Works
 
